@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Users {% endblock %}</h1>
+    <div class="d-flex flex-column">
+        {% for user in users %}
+        <div class="card w-50 m-auto">
+            <div class="card-body">
+                <h2 class="card-title text-center">
+                    <a href="{{ url_for('post', user_id=user[0]) }}" class="link-info">{{ user[1] }}</a>
+                </h2>
+                <a href="{{ url_for('edit', id=user[0] ) }}">
+                    <button class="btn btn-warning btn-xs btn-block m-auto w-25" type="button">Edit</button>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

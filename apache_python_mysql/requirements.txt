@@ -1,0 +1,15 @@
+cffi==1.15.0
+click==8.1.2
+cryptography==37.0.1
+Flask==2.1.1
+Flask-MySQL==1.5.2
+importlib-metadata==4.11.3
+itsdangerous==2.1.2
+Jinja2==3.1.1
+MarkupSafe==2.1.1
+pycparser==2.21
+PyMySQL==1.0.2
+python-dotenv==0.20.0
+uWSGI==2.0.20
+Werkzeug==2.1.1
+zipp==3.8.0

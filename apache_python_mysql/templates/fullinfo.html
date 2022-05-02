@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Информация</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h2>Список пользователей</h2>
+
+
+<div>
+	<h3>Информация о пользователе</h3>
+	<p>Имя: $username</p>
+	<p>Почта: $useremail</p>
+</div>
+<a href='update.php?id=" .$row["id"] . "'><button>Изменить</button></a>
+<a href='delete.php?id=" .$row["id"] . "'><button>Удалить</button></a>
+
+</body>
+</html>

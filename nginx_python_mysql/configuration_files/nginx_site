@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name _;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/var/www/LAMP-setup-group-project/nginx_python_mysql/nginx_site.sock;
+    }
+}

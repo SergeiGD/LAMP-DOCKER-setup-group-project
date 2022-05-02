@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to nginx site
+After=network.target
+
+[Service]
+User=sergei
+Group=www-data
+WorkingDirectory=/var/www/lamp_setup/python_nginx_mysql
+Environment="PATH=/var/www/lamp_setup/python_nginx_mysql/env/bin"
+ExecStart=/var/www/lamp_setup/python_nginx_mysql/env/bin/uwsgi --ini nginx_site.ini
+
+[Install]
+WantedBy=multi-user.target

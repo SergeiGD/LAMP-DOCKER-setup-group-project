@@ -61,13 +61,19 @@ DB_PORT=3444
 sudo cp ./configuration_files/nginx_site /etc/nginx/sites-available/
 ```
 
-10) И файл nginx_site.service (шаг 8) в папку /etc/systemd/system/
+10) Теперь активируйте эту конфигурацию, создав на нее символическую ссылку в папку /etc/nginx/sites-enabled/
+
+```bash
+sudo ln -s /etc/nginx/sites-available/nginx_site /etc/nginx/sites-enabled/nginx_site
+```
+
+11) И файл nginx_site.service (шаг 8) в папку /etc/systemd/system/
 
 ```bash
 sudo cp ./configuration_files/nginx_site.service /etc/systemd/system/nginx_site.service
 ```
 
-11) После этого активируйте демона и перезапустите nginx
+12) После этого активируйте демона и перезапустите nginx
 
 ```bash
 sudo systemctl start nginx_site.service
@@ -75,4 +81,4 @@ sudo systemctl enable nginx_site.service
 sudo systemctl restart nginx
 ```
 
-12) Все готово. Теперь по адресу http://ваш_ip:80 вы можете зайти на сайт. Обратите внимание, что изначально таблица с пользователями будет пуста, т.к. импортировалась только стрктура базы данных без данных
+13) Все готово. Теперь по адресу http://ваш_ip:80 вы можете зайти на сайт. Обратите внимание, что изначально таблица с пользователями будет пуста, т.к. импортировалась только стрктура базы данных без данных

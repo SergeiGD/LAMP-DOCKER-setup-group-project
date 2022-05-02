@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python CRUD nginx + mysql</title>
+</head>
+<body>
+
+   <form method="GET" >
+
+	Name : <input type="text" name="name_create" size="15" required>
+	Email: <input type="text" name="email_create" size="10" required>
+    Phone: <input type="text" name="phone_create" size="10">
+    <button type="submit" name="create">add new user</button>
+
+    </form>
+
+    <br/>
+
+	<table cellpadding="5" border="1">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>phone</th>
+		</tr>
+
+        {% for user in users %}
+
+            <tr>
+
+				<form method='GET'>
+					<td> <input type='hidden' name="id" value='{{ user[0] }}'> {{ user[0] }} </th>
+					<td> <input type='text' name="name_edit" value='{{ user[1] }}' required></td>
+					<td> <input type='text' name="email_edit" value='{{ user[2] }}' required></td>
+					<td> <input type='text' name="phone_edit" value='{{ user[3] }}'></td>
+					<th>
+						<button type="submit" name="edit">edit</button>
+					</th>
+                    <th>
+                        <button type="submit" name="delete">delete</button>
+				    </th>
+				</form>
+
+			</tr>
+
+        {% endfor %}
+
+	</table>
+</body>
+</html>

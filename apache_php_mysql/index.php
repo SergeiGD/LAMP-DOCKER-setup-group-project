@@ -5,9 +5,6 @@
         echo("Ошибка: Невозможно подключиться к MySQLi" . mysqli_connect_error());
     }
 
-    $select ='SELECT id, Name, Phone FROM Users ORDER BY id';
-    $select_all = mysqli_query($link, $select);
-
     if(isset($_GET['name']) && isset($_GET['phone'])){
         $insert="INSERT INTO Users (Name, Phone) VALUES ('{$_GET['name']}', '{$_GET['phone']}')";
         $insert_user=mysqli_query($link, $insert);
@@ -22,6 +19,10 @@
         $update="UPDATE Users SET Name = '{_GET[name_edit]}', Phone = '{_GET[phone_edit]}' WHERE id = {_GET[id_edit]}";
         $update_user = mysqli_query($link, $update);
     }
+
+    $select ='SELECT id, Name, Phone FROM Users ORDER BY id';
+    $select_all = mysqli_query($link, $select);
+
 
 ?>
 

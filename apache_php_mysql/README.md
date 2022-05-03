@@ -81,4 +81,4 @@ http://localhost:8080/index.html
 Вбейте в браузер hhtp://(ваш IP):(порт)/index.html
 
 У вас должно получится так:
-![](./img/HelloWorld.jpg)
+![](./img/HelloWorld.jpeg)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Пользователи</title>
+<meta charset="utf-8" />
+</head>
+<body>
+
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+		</tr>
+    {% for row in users %}
+    <tr>
+        <form method='GET'>
+
+		<td> <input type='hidden' name="id" value='{{ row[0] }}'> {{ row[0] }} </th>
+		<td> <input type='text' name="name_edit" value='{{ row[1] }}' required></td>
+		<td> <input type='text' name="email_edit" value='{{ row[2] }}' required></td>
+		<td><button type="submit" name="edit">Изменить</button></td>
+		<td><button type="submit" name="delete">Удалить</button></td>
+	</form>
+    </tr>
+    {% endfor %}
+</table>
+	<p></p>
+	<form method="GET" >
+
+		Name : <input type="text" name="name_create" size="15" required>
+		Email: <input type="text" name="email_create" size="10" required>
+		<button type="submit" name="create">Добавить</button>
+
+	</form>
+</body>
+</html>

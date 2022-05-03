@@ -6,6 +6,10 @@
 Мой GitHub https://github.com/Nik1taZz
 
 Требования: MySql(База данный DateUsers c таблицей Users), PHP, Apache.
+
+
+# Настройка apache и создание виртуального хоста.  
+
 1)Команды для установки Apache сервера
 ```bash
 sudo apt-get install apache2

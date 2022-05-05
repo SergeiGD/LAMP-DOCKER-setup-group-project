@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=sergei
 Group=www-data
-WorkingDirectory=/var/www/lamp_setup/python_nginx_mysql
-Environment="PATH=/var/www/lamp_setup/python_nginx_mysql/env/bin"
-ExecStart=/var/www/lamp_setup/python_nginx_mysql/env/bin/uwsgi --ini nginx_site.ini
+WorkingDirectory=/var/www/LAMP-setup-group-project/nginx_python_mysql
+Environment="PATH=/var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin"
+ExecStart=/var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi --ini nginx_site.ini
 
 [Install]
 WantedBy=multi-user.target

@@ -9090,3 +9090,2087 @@ spawned uWSGI worker 2 (pid: 1136, cores: 1)
 spawned uWSGI worker 3 (pid: 1137, cores: 1)
 spawned uWSGI worker 4 (pid: 1138, cores: 1)
 spawned uWSGI worker 5 (pid: 1139, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 18:51:47 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5573ba3a46e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./wsgi.py", line 1, in <module>
+    from index import app
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 39
+    if "delete" in request.args:
+    ^
+IndentationError: expected an indented block
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12228)
+spawned uWSGI worker 1 (pid: 12230, cores: 1)
+spawned uWSGI worker 2 (pid: 12231, cores: 1)
+spawned uWSGI worker 3 (pid: 12232, cores: 1)
+spawned uWSGI worker 4 (pid: 12233, cores: 1)
+spawned uWSGI worker 5 (pid: 12234, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 12231|app: -1|req: -1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 18:51:48 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 12234|app: -1|req: -1/2] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 18:54:05 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 12234|app: -1|req: -1/3] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 18:54:15 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 5 buried after 0 seconds
+worker 2 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 18:55:17 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55aa5d90c6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./wsgi.py", line 1, in <module>
+    from index import app
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 39
+    if "delete" in request.args:
+    ^
+IndentationError: expected an indented block
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12323)
+spawned uWSGI worker 1 (pid: 12325, cores: 1)
+spawned uWSGI worker 2 (pid: 12326, cores: 1)
+spawned uWSGI worker 3 (pid: 12327, cores: 1)
+spawned uWSGI worker 4 (pid: 12328, cores: 1)
+spawned uWSGI worker 5 (pid: 12329, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 12327|app: -1|req: -1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 18:55:18 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 5 buried after 0 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:19:18 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562b139966e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./wsgi.py", line 1, in <module>
+    from index import app
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 39
+    if "delete" in request.args:
+    ^
+IndentationError: expected an indented block
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16166)
+spawned uWSGI worker 1 (pid: 16167, cores: 1)
+spawned uWSGI worker 2 (pid: 16168, cores: 1)
+spawned uWSGI worker 3 (pid: 16169, cores: 1)
+spawned uWSGI worker 4 (pid: 16170, cores: 1)
+spawned uWSGI worker 5 (pid: 16171, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 16171|app: -1|req: -1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:19:20 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 5 buried after 0 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:25:45 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559b221fe6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559b221fe6e0 pid: 16751 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16751)
+spawned uWSGI worker 1 (pid: 16754, cores: 1)
+spawned uWSGI worker 2 (pid: 16755, cores: 1)
+spawned uWSGI worker 3 (pid: 16756, cores: 1)
+spawned uWSGI worker 4 (pid: 16757, cores: 1)
+spawned uWSGI worker 5 (pid: 16758, cores: 1)
+[2022-05-05 19:25:49,299] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 16754|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:25:49 2022] GET / => generated 290 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:26:32 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5630cfd9c6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5630cfd9c6e0 pid: 16813 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16813)
+spawned uWSGI worker 1 (pid: 16815, cores: 1)
+spawned uWSGI worker 2 (pid: 16816, cores: 1)
+spawned uWSGI worker 3 (pid: 16817, cores: 1)
+spawned uWSGI worker 4 (pid: 16818, cores: 1)
+spawned uWSGI worker 5 (pid: 16819, cores: 1)
+[2022-05-05 19:26:33,444] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 16815|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:26:33 2022] GET / => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:27:38 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562afbd036e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562afbd036e0 pid: 16849 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16849)
+spawned uWSGI worker 1 (pid: 16851, cores: 1)
+spawned uWSGI worker 2 (pid: 16852, cores: 1)
+spawned uWSGI worker 3 (pid: 16853, cores: 1)
+spawned uWSGI worker 4 (pid: 16854, cores: 1)
+spawned uWSGI worker 5 (pid: 16855, cores: 1)
+[2022-05-05 19:27:43,126] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 16853|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:27:43 2022] GET / => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:27:59 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557d889b36e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557d889b36e0 pid: 16872 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16872)
+spawned uWSGI worker 1 (pid: 16874, cores: 1)
+spawned uWSGI worker 2 (pid: 16875, cores: 1)
+spawned uWSGI worker 3 (pid: 16876, cores: 1)
+spawned uWSGI worker 4 (pid: 16877, cores: 1)
+spawned uWSGI worker 5 (pid: 16878, cores: 1)
+[2022-05-05 19:28:05,291] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 16874|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:28:05 2022] GET / => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:28:45 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559fc2ecc6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559fc2ecc6e0 pid: 16910 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16910)
+spawned uWSGI worker 1 (pid: 16913, cores: 1)
+spawned uWSGI worker 2 (pid: 16914, cores: 1)
+spawned uWSGI worker 3 (pid: 16915, cores: 1)
+spawned uWSGI worker 4 (pid: 16916, cores: 1)
+spawned uWSGI worker 5 (pid: 16917, cores: 1)
+[pid: 16914|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:28:46 2022] GET / => generated 1141 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:30:32 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563af695a6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563af695a6e0 pid: 17016 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17016)
+spawned uWSGI worker 1 (pid: 17019, cores: 1)
+spawned uWSGI worker 2 (pid: 17020, cores: 1)
+spawned uWSGI worker 3 (pid: 17021, cores: 1)
+spawned uWSGI worker 4 (pid: 17022, cores: 1)
+spawned uWSGI worker 5 (pid: 17023, cores: 1)
+[2022-05-05 19:30:33,021] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 17020|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:30:33 2022] GET / => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:30:46 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x564b62c586e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x564b62c586e0 pid: 17042 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17042)
+spawned uWSGI worker 1 (pid: 17044, cores: 1)
+spawned uWSGI worker 2 (pid: 17045, cores: 1)
+spawned uWSGI worker 3 (pid: 17046, cores: 1)
+spawned uWSGI worker 4 (pid: 17047, cores: 1)
+spawned uWSGI worker 5 (pid: 17048, cores: 1)
+[2022-05-05 19:30:47,573] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 290, in __init__
+    raise ValueError("port should be of type int")
+ValueError: port should be of type int
+[pid: 17045|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:30:47 2022] GET / => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:31:09 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55bc82a016e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55bc82a016e0 pid: 17064 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17064)
+spawned uWSGI worker 1 (pid: 17066, cores: 1)
+spawned uWSGI worker 2 (pid: 17067, cores: 1)
+spawned uWSGI worker 3 (pid: 17068, cores: 1)
+spawned uWSGI worker 4 (pid: 17069, cores: 1)
+spawned uWSGI worker 5 (pid: 17070, cores: 1)
+[2022-05-05 19:31:10,627] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+[pid: 17067|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:31:10 2022] GET / => generated 290 bytes in 8 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[2022-05-05 19:31:15,295] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 20, in index
+    conn = mysql.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flaskext/mysql.py", line 65, in connect
+    return pymysql.connect(**self.connect_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+[pid: 17066|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:31:15 2022] GET / => generated 290 bytes in 6 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 19:33:23 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55dfc25cd6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55dfc25cd6e0 pid: 17178 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17178)
+spawned uWSGI worker 1 (pid: 17181, cores: 1)
+spawned uWSGI worker 2 (pid: 17182, cores: 1)
+spawned uWSGI worker 3 (pid: 17183, cores: 1)
+spawned uWSGI worker 4 (pid: 17184, cores: 1)
+spawned uWSGI worker 5 (pid: 17185, cores: 1)
+[pid: 17182|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 19:33:24 2022] GET / => generated 1141 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17181|app: 0|req: 1/2] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:09:49 2022] GET / => generated 1141 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17183|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:10:10 2022] GET / => generated 1140 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17185|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:13:01 2022] GET / => generated 1132 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17185|app: 0|req: 2/5] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:13:03 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 1132 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17185|app: 0|req: 3/6] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:16:40 2022] GET / => generated 1132 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17184|app: 0|req: 1/7] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:16:42 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 1132 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:16:48 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563125a6d6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563125a6d6e0 pid: 17750 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17750)
+spawned uWSGI worker 1 (pid: 17754, cores: 1)
+spawned uWSGI worker 2 (pid: 17755, cores: 1)
+spawned uWSGI worker 3 (pid: 17756, cores: 1)
+spawned uWSGI worker 4 (pid: 17757, cores: 1)
+spawned uWSGI worker 5 (pid: 17758, cores: 1)
+[pid: 17756|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:16:52 2022] GET / => generated 1132 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:16:54,440] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return redirect(url_for(f'/edit?id={id}'))
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/werkzeug/routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint '/edit?id=18'. Did you mean 'edit' instead?
+[pid: 17755|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:16:54 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 290 bytes in 7 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:18:37 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5586228156e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5586228156e0 pid: 17799 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17799)
+spawned uWSGI worker 1 (pid: 17801, cores: 1)
+spawned uWSGI worker 2 (pid: 17802, cores: 1)
+spawned uWSGI worker 3 (pid: 17803, cores: 1)
+spawned uWSGI worker 4 (pid: 17804, cores: 1)
+spawned uWSGI worker 5 (pid: 17805, cores: 1)
+[pid: 17803|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:18:40 2022] GET / => generated 1132 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:18:41,926] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return render_template('edit.html', id=id)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17802|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:18:41 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 290 bytes in 10 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:22:40 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55686f1836e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55686f1836e0 pid: 17981 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17981)
+spawned uWSGI worker 1 (pid: 17984, cores: 1)
+spawned uWSGI worker 2 (pid: 17985, cores: 1)
+spawned uWSGI worker 3 (pid: 17986, cores: 1)
+spawned uWSGI worker 4 (pid: 17987, cores: 1)
+spawned uWSGI worker 5 (pid: 17988, cores: 1)
+[pid: 17986|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:22:42 2022] GET / => generated 1264 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:22:44,891] ERROR in app: Exception on /edit [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 61, in edit
+    return render_template('edit.html', users=data)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17984|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:22:44 2022] GET /edit?id=18 => generated 290 bytes in 11 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 17984|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:23:51 2022] GET / => generated 1262 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:23:52,935] ERROR in app: Exception on /edit [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 61, in edit
+    return render_template('edit.html', users=data)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17984|app: 0|req: 3/4] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:23:52 2022] GET /edit?id=18 => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[2022-05-05 20:25:26,696] ERROR in app: Exception on /edit [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 61, in edit
+    return render_template('edit.html', users=data)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17985|app: 0|req: 1/5] 192.168.1.63 () {44 vars in 824 bytes} [Thu May  5 20:25:26 2022] GET /edit?id=18 => generated 290 bytes in 11 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[2022-05-05 20:25:27,409] ERROR in app: Exception on /edit [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 61, in edit
+    return render_template('edit.html', users=data)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17986|app: 0|req: 2/6] 192.168.1.63 () {44 vars in 824 bytes} [Thu May  5 20:25:27 2022] GET /edit?id=18 => generated 290 bytes in 5 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[2022-05-05 20:25:27,591] ERROR in app: Exception on /edit [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 61, in edit
+    return render_template('edit.html', users=data)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17987|app: 0|req: 1/7] 192.168.1.63 () {44 vars in 824 bytes} [Thu May  5 20:25:27 2022] GET /edit?id=18 => generated 290 bytes in 11 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 17987|app: 0|req: 2/8] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:25:30 2022] GET / => generated 1253 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:25:33,533] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return render_template('edit.html', id=id)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 17988|app: 0|req: 1/9] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:25:33 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 290 bytes in 10 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:26:34 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558cd40a36e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558cd40a36e0 pid: 18065 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18065)
+spawned uWSGI worker 1 (pid: 18068, cores: 1)
+spawned uWSGI worker 2 (pid: 18069, cores: 1)
+spawned uWSGI worker 3 (pid: 18070, cores: 1)
+spawned uWSGI worker 4 (pid: 18071, cores: 1)
+spawned uWSGI worker 5 (pid: 18072, cores: 1)
+[pid: 18069|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:26:37 2022] GET / => generated 1253 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:26:38,658] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return render_template('edit.html', id=id)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 18071|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:26:38 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 290 bytes in 10 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:26:52 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c84fb486e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c84fb486e0 pid: 18088 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18088)
+spawned uWSGI worker 1 (pid: 18091, cores: 1)
+spawned uWSGI worker 2 (pid: 18092, cores: 1)
+spawned uWSGI worker 3 (pid: 18093, cores: 1)
+spawned uWSGI worker 4 (pid: 18094, cores: 1)
+spawned uWSGI worker 5 (pid: 18095, cores: 1)
+[pid: 18092|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:26:58 2022] GET / => generated 1253 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:26:59 2022] GET /edit?id=18 => generated 651 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:27:52 2022] GET / => generated 1253 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:27:54,253] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return render_template('edit.html', id=id)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 18095|app: 0|req: 3/4] 192.168.1.63 () {42 vars in 891 bytes} [Thu May  5 20:27:54 2022] GET /?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit= => generated 290 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 18094|app: 0|req: 1/5] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:34:20 2022] GET / => generated 1210 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18093|app: 0|req: 1/6] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:34:47 2022] GET / => generated 1157 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 4/7] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:04 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18093|app: 0|req: 2/8] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:08 2022] GET / => generated 1157 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18094|app: 0|req: 2/9] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:08 2022] GET / => generated 1210 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (2 switches on core 0)
+[pid: 18094|app: 0|req: 3/10] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:09 2022] GET / => generated 1210 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18092|app: 0|req: 2/11] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:09 2022] GET / => generated 1253 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 5/12] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:09 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 6/13] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:10 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 7/14] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:10 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (2 switches on core 0)
+[pid: 18091|app: 0|req: 1/15] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:10 2022] GET / => generated 1058 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 8/16] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:10 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 18095|app: 0|req: 9/17] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:12 2022] GET / => generated 1253 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:35:18 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5615a47986e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5615a47986e0 pid: 19152 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19152)
+spawned uWSGI worker 1 (pid: 19156, cores: 1)
+spawned uWSGI worker 2 (pid: 19157, cores: 1)
+spawned uWSGI worker 3 (pid: 19158, cores: 1)
+spawned uWSGI worker 4 (pid: 19159, cores: 1)
+spawned uWSGI worker 5 (pid: 19160, cores: 1)
+[pid: 19159|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:19 2022] GET / => generated 1058 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 19156|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:38 2022] GET / => generated 1086 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 19158|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:35:49 2022] GET / => generated 1086 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:37:10 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560a1d9566e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560a1d9566e0 pid: 19577 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19577)
+spawned uWSGI worker 1 (pid: 19580, cores: 1)
+spawned uWSGI worker 2 (pid: 19581, cores: 1)
+spawned uWSGI worker 3 (pid: 19582, cores: 1)
+spawned uWSGI worker 4 (pid: 19583, cores: 1)
+spawned uWSGI worker 5 (pid: 19584, cores: 1)
+[pid: 19582|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:37:11 2022] GET / => generated 1101 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[2022-05-05 20:37:14,794] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return render_template('edit.html', id=id)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 8, in top-level template code
+    {% block content %}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/templates/edit.html", line 11, in block 'content'
+    id : {{ user[0] }}
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/jinja2/environment.py", line 456, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'user' is undefined
+[pid: 19580|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:37:14 2022] GET /?id=18&edit= => generated 290 bytes in 16 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:38:36 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c9659306e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c9659306e0 pid: 19621 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19621)
+spawned uWSGI worker 1 (pid: 19624, cores: 1)
+spawned uWSGI worker 2 (pid: 19625, cores: 1)
+spawned uWSGI worker 3 (pid: 19626, cores: 1)
+spawned uWSGI worker 4 (pid: 19627, cores: 1)
+spawned uWSGI worker 5 (pid: 19628, cores: 1)
+[pid: 19624|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:38:38 2022] GET / => generated 1101 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 19625|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:38:39 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 19628|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:38:39 2022] GET /edit?id=18 => generated 651 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19626|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:39:01 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:40:43 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a02cd5c6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55a02cd5c6e0 pid: 19840 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19840)
+spawned uWSGI worker 1 (pid: 19842, cores: 1)
+spawned uWSGI worker 2 (pid: 19843, cores: 1)
+spawned uWSGI worker 3 (pid: 19844, cores: 1)
+spawned uWSGI worker 4 (pid: 19845, cores: 1)
+spawned uWSGI worker 5 (pid: 19846, cores: 1)
+[pid: 19842|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:40:45 2022] GET / => generated 979 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19843|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:40:46 2022] GET /?id=18&edit= => generated 228 bytes in 6 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 19842|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:40:46 2022] GET /edit?id=18 => generated 651 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19844|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 935 bytes} [Thu May  5 20:40:49 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=ffff&phone_edit=1111&edit=edit+user => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 19844|app: 0|req: 2/5] 192.168.1.63 () {40 vars in 765 bytes} [Thu May  5 20:43:12 2022] GET /edit.php?id=18 => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 19844|app: 0|req: 3/6] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:44:05 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19843|app: 0|req: 2/7] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:44:06 2022] GET /?id=18&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 19845|app: 0|req: 1/8] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:44:06 2022] GET /edit?id=18 => generated 651 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19843|app: 0|req: 3/9] 192.168.1.63 () {42 vars in 933 bytes} [Thu May  5 20:44:35 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=sss&phone_edit=1111&edit=edit+user => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 19846|app: 0|req: 1/10] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:44:48 2022] GET / => generated 979 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:44:55 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5577f1fbc6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5577f1fbc6e0 pid: 19895 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19895)
+spawned uWSGI worker 1 (pid: 19898, cores: 1)
+spawned uWSGI worker 2 (pid: 19899, cores: 1)
+spawned uWSGI worker 3 (pid: 19900, cores: 1)
+spawned uWSGI worker 4 (pid: 19901, cores: 1)
+spawned uWSGI worker 5 (pid: 19902, cores: 1)
+[pid: 19900|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:44:57 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[2022-05-05 20:44:58,034] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return redirect(url_for("edit.html", id=id))
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/werkzeug/routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit.html' with values ['id']. Did you mean 'edit' instead?
+[pid: 19899|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:44:58 2022] GET /?id=18&edit= => generated 290 bytes in 7 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 19900|app: 0|req: 2/3] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:45:04 2022] GET / => generated 979 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[2022-05-05 20:45:05,621] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return redirect(url_for("edit.html", id=id))
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/werkzeug/routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit.html' with values ['id']. Did you mean 'edit' instead?
+[pid: 19902|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:45:05 2022] GET /?id=18&edit= => generated 290 bytes in 6 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 19898|app: 0|req: 1/5] 192.168.1.63 () {40 vars in 751 bytes} [Thu May  5 20:45:22 2022] GET /?id=18\ => generated 979 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19902|app: 0|req: 2/6] 192.168.1.63 () {40 vars in 749 bytes} [Thu May  5 20:45:25 2022] GET /?id=18 => generated 979 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[2022-05-05 20:45:27,950] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return redirect(url_for("edit.html", id=id))
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/werkzeug/routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit.html' with values ['id']. Did you mean 'edit' instead?
+[pid: 19900|app: 0|req: 3/7] 192.168.1.63 () {42 vars in 803 bytes} [Thu May  5 20:45:27 2022] GET /?id=18&edit= => generated 290 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:45:34 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ce8ce0d6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ce8ce0d6e0 pid: 19920 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19920)
+spawned uWSGI worker 1 (pid: 19923, cores: 1)
+spawned uWSGI worker 2 (pid: 19924, cores: 1)
+spawned uWSGI worker 3 (pid: 19925, cores: 1)
+spawned uWSGI worker 4 (pid: 19926, cores: 1)
+spawned uWSGI worker 5 (pid: 19927, cores: 1)
+[pid: 19925|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:45:37 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[2022-05-05 20:45:38,332] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/./index.py", line 32, in index
+    return redirect(url_for("edit.html", id=id))
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/var/www/LAMP-setup-group-project/nginx_python_mysql/env/lib/python3.8/site-packages/werkzeug/routing.py", line 2307, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit.html' with values ['id']. Did you mean 'edit' instead?
+[pid: 19923|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:45:38 2022] GET /?id=18&edit= => generated 290 bytes in 7 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:46:07 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55558d1756e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55558d1756e0 pid: 19942 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19942)
+spawned uWSGI worker 1 (pid: 19944, cores: 1)
+spawned uWSGI worker 2 (pid: 19945, cores: 1)
+spawned uWSGI worker 3 (pid: 19946, cores: 1)
+spawned uWSGI worker 4 (pid: 19947, cores: 1)
+spawned uWSGI worker 5 (pid: 19948, cores: 1)
+[pid: 19946|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:46:09 2022] GET / => generated 979 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19948|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:46:10 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 19948|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:46:10 2022] GET /edit?id=18 => generated 651 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:46:20 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563bfdd746e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563bfdd746e0 pid: 19964 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19964)
+spawned uWSGI worker 1 (pid: 19966, cores: 1)
+spawned uWSGI worker 2 (pid: 19967, cores: 1)
+spawned uWSGI worker 3 (pid: 19968, cores: 1)
+spawned uWSGI worker 4 (pid: 19969, cores: 1)
+spawned uWSGI worker 5 (pid: 19970, cores: 1)
+[pid: 19968|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:46:23 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19966|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:46:24 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 19967|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:46:24 2022] GET /edit?id=18 => generated 651 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19970|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 933 bytes} [Thu May  5 20:46:26 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=sss&phone_edit=1111&edit=edit+user => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:46:36 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561667f596e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561667f596e0 pid: 19982 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19982)
+spawned uWSGI worker 1 (pid: 20006, cores: 1)
+spawned uWSGI worker 2 (pid: 20007, cores: 1)
+spawned uWSGI worker 3 (pid: 20008, cores: 1)
+spawned uWSGI worker 4 (pid: 20009, cores: 1)
+spawned uWSGI worker 5 (pid: 20010, cores: 1)
+[pid: 20008|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:46:38 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20007|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:46:39 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:46:39 2022] GET /edit?id=18 => generated 651 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 2/4] 192.168.1.63 () {42 vars in 935 bytes} [Thu May  5 20:46:40 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit=edit+user => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 3/5] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:47:31 2022] GET / => generated 967 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 1/6] 192.168.1.63 () {42 vars in 785 bytes} [Thu May  5 20:47:32 2022] GET /?id=18 => generated 967 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 4/7] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:33 2022] GET /?id=18 => generated 967 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 5/8] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:34 2022] GET /?id=18 => generated 967 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 2/9] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:34 2022] GET /?id=18 => generated 967 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 6/10] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:35 2022] GET /?id=18 => generated 967 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 7/11] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:43 2022] GET /?id=18 => generated 967 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 3/12] 192.168.1.63 () {42 vars in 791 bytes} [Thu May  5 20:47:44 2022] GET /?id=18 => generated 967 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20006|app: 0|req: 1/13] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:47:47 2022] GET / => generated 979 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20009|app: 0|req: 8/14] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:47:47 2022] GET /?id=18&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (2 switches on core 0)
+[pid: 20010|app: 0|req: 4/15] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:47:47 2022] GET /edit?id=18 => generated 651 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 5/16] 192.168.1.63 () {42 vars in 935 bytes} [Thu May  5 20:47:56 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit=edit+user => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 20006|app: 0|req: 2/17] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:47:59 2022] GET / => generated 979 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 6/18] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:48:00 2022] GET /?id=18&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20010|app: 0|req: 7/19] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:48:00 2022] GET /edit?id=18 => generated 651 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20006|app: 0|req: 3/20] 192.168.1.63 () {42 vars in 935 bytes} [Thu May  5 20:48:01 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111&edit=edit+user => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:48:17 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562cafc506e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562cafc506e0 pid: 20067 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20067)
+spawned uWSGI worker 1 (pid: 20070, cores: 1)
+spawned uWSGI worker 2 (pid: 20071, cores: 1)
+spawned uWSGI worker 3 (pid: 20072, cores: 1)
+spawned uWSGI worker 4 (pid: 20073, cores: 1)
+spawned uWSGI worker 5 (pid: 20074, cores: 1)
+[pid: 20072|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:48:20 2022] GET / => generated 979 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20070|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:48:21 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20071|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:48:21 2022] GET /edit?id=18 => generated 639 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20071|app: 0|req: 2/4] 192.168.1.63 () {42 vars in 905 bytes} [Thu May  5 20:48:22 2022] GET /edit.php?id=18&name_edit=ffff&email_edit=cccc&phone_edit=1111 => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:49:10 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56005141a6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56005141a6e0 pid: 20101 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20101)
+spawned uWSGI worker 1 (pid: 20104, cores: 1)
+spawned uWSGI worker 2 (pid: 20105, cores: 1)
+spawned uWSGI worker 3 (pid: 20106, cores: 1)
+spawned uWSGI worker 4 (pid: 20107, cores: 1)
+spawned uWSGI worker 5 (pid: 20108, cores: 1)
+[pid: 20105|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:49:13 2022] GET / => generated 979 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20107|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:49:14 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20107|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:49:14 2022] GET /edit?id=18 => generated 621 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20107|app: 0|req: 3/4] 192.168.1.63 () {42 vars in 895 bytes} [Thu May  5 20:49:18 2022] GET /edit?id=18&name_edit=ffff&email_edit=aaa&phone_edit=1111 => generated 621 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:49:34 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x564135d986e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564135d986e0 pid: 20120 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20120)
+spawned uWSGI worker 1 (pid: 20122, cores: 1)
+spawned uWSGI worker 2 (pid: 20123, cores: 1)
+spawned uWSGI worker 3 (pid: 20124, cores: 1)
+spawned uWSGI worker 4 (pid: 20125, cores: 1)
+spawned uWSGI worker 5 (pid: 20126, cores: 1)
+[pid: 20123|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:49:37 2022] GET / => generated 979 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:49:39 2022] GET /?id=18&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20123|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:49:39 2022] GET /edit?id=18 => generated 633 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20123|app: 0|req: 3/4] 192.168.1.63 () {42 vars in 925 bytes} [Thu May  5 20:49:42 2022] GET /edit?id=18&name_edit=ffff&email_edit=fff&phone_edit=1111&edit=edit+user => generated 208 bytes in 7 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20122|app: 0|req: 1/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:49:42 2022] GET / => generated 978 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 2/6] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:49:44 2022] GET /?id=18&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20123|app: 0|req: 4/7] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:49:44 2022] GET /edit?id=18 => generated 632 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 3/8] 192.168.1.63 () {42 vars in 925 bytes} [Thu May  5 20:49:46 2022] GET /edit?id=18&name_edit=ssss&email_edit=fff&phone_edit=1111&edit=edit+user => generated 208 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 4/9] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:49:46 2022] GET / => generated 978 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 5/10] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:49:58 2022] GET /?id=18&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20122|app: 0|req: 2/11] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:49:58 2022] GET /edit?id=18 => generated 632 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 1/12] 192.168.1.63 () {42 vars in 977 bytes} [Thu May  5 20:50:16 2022] GET /edit?id=18&name_edit=alex+qwerty&email_edit=kdirg%40gmail.com&phone_edit=582355234&edit=edit+user => generated 208 bytes in 8 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 2/13] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:50:16 2022] GET / => generated 1002 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 6/14] 192.168.1.63 () {42 vars in 911 bytes} [Thu May  5 20:50:23 2022] GET /?name_create=asdsad+asd+&email_create=asdasdsad&phone_create=&create= => generated 1404 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 7/15] 192.168.1.63 () {42 vars in 866 bytes} [Thu May  5 20:51:04 2022] GET /?id=19&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 3/16] 192.168.1.63 () {42 vars in 862 bytes} [Thu May  5 20:51:04 2022] GET /edit?id=19 => generated 645 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 4/17] 192.168.1.63 () {44 vars in 893 bytes} [Thu May  5 20:51:20 2022] GET /edit?id=19 => generated 645 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 5/18] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:51:23 2022] GET / => generated 1404 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20126|app: 0|req: 6/19] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:51:24 2022] GET /?id=19&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20124|app: 0|req: 8/20] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:51:24 2022] GET /edit?id=19 => generated 666 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:53:14 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x555e588df6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555e588df6e0 pid: 20183 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20183)
+spawned uWSGI worker 1 (pid: 20185, cores: 1)
+spawned uWSGI worker 2 (pid: 20186, cores: 1)
+spawned uWSGI worker 3 (pid: 20187, cores: 1)
+spawned uWSGI worker 4 (pid: 20188, cores: 1)
+spawned uWSGI worker 5 (pid: 20189, cores: 1)
+[pid: 20185|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 769 bytes} [Thu May  5 20:53:15 2022] GET / => generated 1404 bytes in 29 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20186|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:53:16 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20186|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:53:16 2022] GET /edit?id=19 => generated 667 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:54:25 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562c65ec76e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562c65ec76e0 pid: 20220 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20220)
+spawned uWSGI worker 1 (pid: 20223, cores: 1)
+spawned uWSGI worker 2 (pid: 20224, cores: 1)
+spawned uWSGI worker 3 (pid: 20225, cores: 1)
+spawned uWSGI worker 4 (pid: 20226, cores: 1)
+spawned uWSGI worker 5 (pid: 20227, cores: 1)
+[pid: 20224|app: 0|req: 1/1] 192.168.1.63 () {42 vars in 762 bytes} [Thu May  5 20:54:27 2022] GET / => generated 1404 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20223|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:54:28 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20223|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:54:28 2022] GET /edit?id=19 => generated 666 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:55:05 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558782a266e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558782a266e0 pid: 20258 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20258)
+spawned uWSGI worker 1 (pid: 20260, cores: 1)
+spawned uWSGI worker 2 (pid: 20261, cores: 1)
+spawned uWSGI worker 3 (pid: 20262, cores: 1)
+spawned uWSGI worker 4 (pid: 20263, cores: 1)
+spawned uWSGI worker 5 (pid: 20264, cores: 1)
+[pid: 20261|app: 0|req: 1/1] 192.168.1.63 () {40 vars in 738 bytes} [Thu May  5 20:55:08 2022] GET / => generated 1404 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20262|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:55:09 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20264|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:55:09 2022] GET /edit?id=19 => generated 666 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20260|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 951 bytes} [Thu May  5 20:55:10 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=None&edit=edit+user => generated 208 bytes in 8 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20263|app: 0|req: 1/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:55:10 2022] GET / => generated 1404 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:56:50 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x555858bf66e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555858bf66e0 pid: 20315 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20315)
+spawned uWSGI worker 1 (pid: 20317, cores: 1)
+spawned uWSGI worker 2 (pid: 20318, cores: 1)
+spawned uWSGI worker 3 (pid: 20319, cores: 1)
+spawned uWSGI worker 4 (pid: 20320, cores: 1)
+spawned uWSGI worker 5 (pid: 20321, cores: 1)
+[pid: 20318|app: 0|req: 1/1] 192.168.1.63 () {44 vars in 815 bytes} [Thu May  5 20:56:51 2022] GET / => generated 1404 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:56:52 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:56:52 2022] GET /edit?id=19 => generated 666 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 3/4] 192.168.1.63 () {42 vars in 951 bytes} [Thu May  5 20:56:55 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=None&edit=edit+user => generated 208 bytes in 2 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 4/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:56:55 2022] GET / => generated 1404 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 5/6] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:58:24 2022] GET /?id=19&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20318|app: 0|req: 2/7] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:58:24 2022] GET /edit?id=19 => generated 666 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20318|app: 0|req: 3/8] 192.168.1.63 () {42 vars in 943 bytes} [Thu May  5 20:58:27 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=&edit=edit+user => generated 208 bytes in 6 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20320|app: 0|req: 6/9] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:58:27 2022] GET / => generated 1400 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+corrupted size vs. prev_size
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 20:59:18 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5599d5f0a6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5599d5f0a6e0 pid: 20736 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20736)
+spawned uWSGI worker 1 (pid: 20755, cores: 1)
+spawned uWSGI worker 2 (pid: 20756, cores: 1)
+spawned uWSGI worker 3 (pid: 20757, cores: 1)
+spawned uWSGI worker 4 (pid: 20758, cores: 1)
+spawned uWSGI worker 5 (pid: 20759, cores: 1)
+[pid: 20755|app: 0|req: 1/1] 192.168.1.63 () {44 vars in 815 bytes} [Thu May  5 20:59:19 2022] GET / => generated 1400 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20756|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 20:59:19 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20758|app: 0|req: 1/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 20:59:19 2022] GET /edit?id=19 => generated 662 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20757|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 943 bytes} [Thu May  5 20:59:22 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=&edit=edit+user => generated 208 bytes in 9 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20758|app: 0|req: 2/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 20:59:22 2022] GET / => generated 1404 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20756|app: 0|req: 2/6] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 21:00:00 2022] GET /?id=19&edit= => generated 228 bytes in 1 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20755|app: 0|req: 2/7] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 21:00:00 2022] GET /edit?id=19 => generated 666 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20756|app: 0|req: 3/8] 192.168.1.63 () {42 vars in 951 bytes} [Thu May  5 21:00:01 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=None&edit=edit+user => generated 208 bytes in 6 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20759|app: 0|req: 1/9] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 21:00:01 2022] GET / => generated 1404 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May  5 21:00:13 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556a19e1b6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556a19e1b6e0 pid: 20777 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20777)
+spawned uWSGI worker 1 (pid: 20779, cores: 1)
+spawned uWSGI worker 2 (pid: 20780, cores: 1)
+spawned uWSGI worker 3 (pid: 20781, cores: 1)
+spawned uWSGI worker 4 (pid: 20782, cores: 1)
+spawned uWSGI worker 5 (pid: 20783, cores: 1)
+[pid: 20780|app: 0|req: 1/1] 192.168.1.63 () {44 vars in 815 bytes} [Thu May  5 21:00:17 2022] GET / => generated 1404 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 20779|app: 0|req: 1/2] 192.168.1.63 () {42 vars in 797 bytes} [Thu May  5 21:00:17 2022] GET /?id=19&edit= => generated 228 bytes in 5 msecs (HTTP/1.1 302) 3 headers in 106 bytes (1 switches on core 0)
+[pid: 20780|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 21:00:17 2022] GET /edit?id=19 => generated 666 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 20783|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 951 bytes} [Thu May  5 21:00:18 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=None&edit=edit+user => generated 208 bytes in 10 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
+[pid: 20783|app: 0|req: 2/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 21:00:18 2022] GET / => generated 1404 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)

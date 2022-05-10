@@ -11174,3 +11174,34 @@ spawned uWSGI worker 5 (pid: 20783, cores: 1)
 [pid: 20780|app: 0|req: 2/3] 192.168.1.63 () {42 vars in 793 bytes} [Thu May  5 21:00:17 2022] GET /edit?id=19 => generated 666 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
 [pid: 20783|app: 0|req: 1/4] 192.168.1.63 () {42 vars in 951 bytes} [Thu May  5 21:00:18 2022] GET /edit?id=19&name_edit=asdsad+asd+&email_edit=asdasdsad&phone_edit=None&edit=edit+user => generated 208 bytes in 10 msecs (HTTP/1.1 302) 3 headers in 96 bytes (1 switches on core 0)
 [pid: 20783|app: 0|req: 2/5] 192.168.1.63 () {42 vars in 784 bytes} [Thu May  5 21:00:18 2022] GET / => generated 1404 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (64bit) on [Tue May 10 19:18:17 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42538
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5599d94686e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5599d94686e0 pid: 821 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 821)
+spawned uWSGI worker 1 (pid: 1004, cores: 1)
+spawned uWSGI worker 2 (pid: 1005, cores: 1)
+spawned uWSGI worker 3 (pid: 1006, cores: 1)
+spawned uWSGI worker 4 (pid: 1007, cores: 1)
+spawned uWSGI worker 5 (pid: 1008, cores: 1)

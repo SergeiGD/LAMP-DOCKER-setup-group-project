@@ -1,15 +1,18 @@
-# flask-app
+# Настройка linux apache2 python postgresql
 
-Здесь находится простейшее web-приложение.  
+> Технологии, которые использовались  
+> - Python 3.8.10
+> - Flask 2.1.1
+> - PostgreSQL
+> - Apache
 
-Технологии, которые использовались
+## Автор - [romankravchuk](https://github.com/romankravchuk)
 
-- Python 3.8
-- Flask 2.1.1
-- PostgreSQL
-- Apache
+---
 
 ## Как запустить.
+
+---
 
 Шаг 1. Настройка **virtualenv**.
 
@@ -43,6 +46,7 @@ DB_NAME='database name'
 DB_USER='user'
 PGSQL_DB_PASSWORD='user password'
 SECRET_KEY='v3ry_s3cr37_k3y'
+PORT=5432
 ```
 
 Шаг 4. Создать таблицу в вашей бд.
@@ -62,7 +66,9 @@ CREATE TABLE users (
 $ python app.py
 ```
 
-## Настройка под Apache.
+## Настройка Apache.
+
+---
 
 Шаг 1. Поместить файл `flask-app.conf` в директорию `/etc/apache2/sites-enabled/`.
 
@@ -83,7 +89,7 @@ $ sudo cp -rp . /var/www/flask-app/
 Шаг 3. Создать директорию `logs`.
 
 ```bash
-$ mkdir logs
+$ mkdir /var/www/flask-app/logs
 ```
 
 Шаг 4. Перезагрузить Apache.

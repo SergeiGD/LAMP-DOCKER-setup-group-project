@@ -8,21 +8,20 @@
 		if(!$dbconn)
 		{
 			echo "Ошибка подключения";
+			return;
 		}
 
-        $select_all = pg_query($dbconn, "SELECT user_id, user_name, email, phone_num FROM users ORDER BY user_id");
-        $rows_count = pg_query($dbconn, "SELECT count(*) FROM users");
-        $rows_count = pg_num_rows($select_all);
-	    $pages = ceil($rows_count / 4);
-	    $current_page = 1;
 
-	    if(!isset($_GET['opened_page']))
+        $rows_count = pg_fetch_result(pg_query($dbconn, "SELECT COUNT(*) FROM users"), 0, 0);
+	    $pages = ceil($rows_count / 4);
+
+	    if(isset($_GET['opened_page']))
 	    {
-	        $current_page = 1;
+	        $current_page = $_GET['opened_page'];
 	    }
 	    else
 	    {
-	        $current_page = $_GET['opened_page'];
+	        $current_page = 1;
 	    }
 
 	    if(isset($_GET['prev']) && $current_page - 1 > 0)
@@ -33,6 +32,10 @@
 	    {
 	        $current_page = $current_page + 1;
 	    }
+
+        $skip = ($current_page - 1) * 4;
+        $take = 4;
+	    $select_all = pg_query($dbconn, "SELECT user_id, user_name, email, phone_num FROM users ORDER BY user_id LIMIT {$take} OFFSET {$skip}");
 ?>
 
 
@@ -45,86 +48,63 @@
 </head>
 <body>
 
-    <br/>
-
 	<table cellpadding="5" border="1">
 		<tr>
 			<th>id</th>
 			<th>name</th>
 			<th>email</th>
 			<th>phone</th>
-
 		</tr>
-	<?php
 
 
-	    //echo $current_page;
-        //$loaded_rows = 0;
+        <?php
 
-        //for($loaded_rows = 0; $loaded_rows < 40 && $new_row = pg_fetch_row($select_all); $loaded_rows++)
-        for($loaded_rows = 0; $loaded_rows < 4 && ($loaded_rows + 1) * $current_page < $rows_count; $loaded_rows++)
-        {
+            while ($new_row = pg_fetch_row($select_all)):
 
+                $id = $new_row[0];
+                $name = $new_row[1];
+                $email = $new_row[2];
+                $phone = $new_row[3] == null ? "unknown" : $new_row[3];
 
+        ?>
+                <tr>
+                    <form method='post' action='http://192.168.1.57:8081'>
 
-
-
-        }
-
-        for($row = ($current_page - 1) * 4; $row <= ($current_page * 4) - 1 && $row < count(pg_fetch_all($select_all)); $row++)
-            {
-
-                $new_row = pg_fetch_all($select_all)[$row];
-
-                $id = $new_row["user_id"];
-                $name = $new_row["user_name"];
-                $email = $new_row["email"];
-                $phone = $new_row["phone_num"] == null ? "unknown" : $new_row["phone_num"];
-                //$id = $new_row[0];
-                //$name = $new_row[1];
-                //$email = $new_row[2];
-                //$phone = $new_row[3] == null ? "unknown" : $new_row[3];
-
-
-
-                echo "<tr>
-                    <form action='users.php' method='get'>
-                        <td> <input type='hidden' name='id_edit' value='$id'>  $id </td>
-                        <td> $name </td>
-                        <td> $email </td>
-                        <td> $phone </td>
+                        <td> <input type='hidden' name='user_id' value='<?php echo $id; ?>'>
+                            <?php echo $id; ?>
+                        </td>
+                        <td width='200'> <?php echo $name; ?> </td>
+                        <td width='200'> <?php echo $email; ?> </td>
+                        <td width='200'> <?php echo $phone; ?> </td>
                         <td>
-                            <button> <a href='http://192.168.1.57:8081/?id=$id' style='text-decoration:none; color : black'> edit </a> </button>
+                            <input type='submit' value='edit'>
                         </td>
                     </form>
-                </tr>";
-            }
+                </tr>
 
-		while ($new_row = pg_fetch_row($select_all))
-		{
+        <?php
+            endwhile;
+        ?>
 
 
-		}
-	?>
-
-    <?php
-        echo "<form action='users.php' method='get'>
-             <tr>
+        <form action='users.php' method='get'>
+            <tr>
                 <td></td>
-                <td>
+                <td align='center'>
                     <input type='submit' value='prev' name='prev'>
                 </td>
-                <td>
-                    $current_page
-                    <input type='hidden' name='opened_page' value='$current_page'>
+                <td align='center'>
+                    <?php
+                        echo $current_page;
+                        echo "<input type='hidden' name='opened_page' value='{$current_page}'>";
+                    ?>
                 </td>
-                <td>
+                <td align='center'>
                     <input type='submit' value='next' name='next'>
                 </td>
                 <td></td>
-             </tr>
-         </form>";
-     ?>
+                </tr>
+        </form>
 
 	</table>
 

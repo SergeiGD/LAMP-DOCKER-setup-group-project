@@ -68,7 +68,7 @@
 
         ?>
                 <tr>
-                    <form method='post' action='http://192.168.1.57:8081'>
+                    <form method='post' action='<?php echo "http://{$_SERVER['SERVER_ADDR']}:8081"; ?>'>
 
                         <td> <input type='hidden' name='user_id' value='<?php echo $id; ?>'>
                             <?php echo $id; ?>
@@ -90,18 +90,22 @@
         <form action='users.php' method='get'>
             <tr>
                 <td></td>
-                <td align='center'>
-                    <input type='submit' value='prev' name='prev'>
-                </td>
+	            <td align='center'>
+	                <?php if ($current_page != 1): ?>
+	                    <input type='submit' value='prev' name='prev'>
+	                <?php endif; ?>
+	            </td>
                 <td align='center'>
                     <?php
-                        echo $current_page;
+                        echo $current_page . ' / ' . $pages;
                         echo "<input type='hidden' name='opened_page' value='{$current_page}'>";
                     ?>
                 </td>
-                <td align='center'>
-                    <input type='submit' value='next' name='next'>
-                </td>
+	            <td align='center'>
+	            	<?php if ($current_page != $pages): ?>
+	                    <input type='submit' value='next' name='next'>
+	                <?php endif; ?>
+	            </td>
                 <td></td>
                 </tr>
         </form>

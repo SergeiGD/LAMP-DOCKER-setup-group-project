@@ -16,7 +16,7 @@
 		if(isset($_POST['edit_info']) && isset($_POST['name_edit']) && isset($_POST['email_edit']) && isset($_POST['phone_edit']) )
 		{
 			pg_query($dbconn, "UPDATE users SET user_name = '{$_POST['name_edit']}', email = '{$_POST['email_edit']}', phone_num = '{$_POST['phone_edit']}' WHERE user_id = {$user_id}");
-		    header("Location: http://192.168.1.57:8083/");
+		    header("Location: http://{$_SERVER['SERVER_ADDR']}:8083/");
             die();
 		}
 
@@ -59,7 +59,7 @@
 
 		if(isset($_POST['go_back']))
 		{
-		    header("Location: http://192.168.1.57:8083/");
+		    header("Location: http://{$_SERVER['SERVER_ADDR']}:8083/");
             die();
 		}
 

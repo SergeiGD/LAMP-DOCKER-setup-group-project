@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Пользователи</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Пользователи</h1> 
+
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			
+		</tr>
+	
+    {% for row in users %}
+    <tr>
+        <form method='GET'>
+
+		<td> <input type='hidden' name="id" value='{{ row[3] }}'> {{ row[3] }} </th>
+		<td> <input type='text' name="name" value='{{ row[0] }}' {{ row[0] }}></td>
+		<td> <input type='text' name="email" value='{{ row[1] }}' {{ row[1] }}></td>
+		<td><button type="submit" name="moreInformation">Подробнее</button></td>
+		
+		
+		
+		
+		
+		
+	</form>
+    </tr>
+    {% endfor %}
+</table>
+	<form method='GET' novalidate>
+	
+	<p></p>
+	<input type='hidden' name='rowQuantity' value='{{rowQuantity}}'>
+	
+	
+	{% if check_prev == True %}
+		<button type="submit" name="back">Назад</button>
+	{% else %}
+		<button disabled type="submit" name="back">Назад</button>
+	{% endif %}
+	{% if check_next == True %}
+		<button type="submit" name="forward">Вперед</button>
+	{% else %}
+		<button disabled type="submit" name="forward">Вперед</button>
+	{% endif %}
+	<p><button type="submit" name="create">Добавить</button></p>
+	<h3>Сравнение пользователей</h3>
+	Id 1-го пользователя: <input type="text" name="id1" value='{{id1Text}}' size="5" required></p>
+	Id 2-го пользователя: <input type="text" name="id2" value='{{id2Text}}' size="5" required></p>	
+	<button type="submit" name="comparison">Сравнить</button>
+	</form>
+</body>
+</html>

@@ -68,7 +68,7 @@
 
         ?>
                 <tr>
-                    <form method='post' action='<?php echo "http://{$_SERVER['SERVER_ADDR']}:8081"; ?>'>
+                    <form method='post' action='<?php echo "http://{$_SERVER['SERVER_ADDR']}:8081/"; ?>'>
 
                         <td> <input type='hidden' name='user_id' value='<?php echo $id; ?>'>
                             <?php echo $id; ?>

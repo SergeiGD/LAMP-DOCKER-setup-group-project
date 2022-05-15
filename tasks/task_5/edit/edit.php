@@ -16,7 +16,7 @@
 		if(isset($_POST['edit_info']) && isset($_POST['name_edit']) && isset($_POST['email_edit']) && isset($_POST['phone_edit']) )
 		{
 			pg_query($dbconn, "UPDATE users SET user_name = '{$_POST['name_edit']}', email = '{$_POST['email_edit']}', phone_num = '{$_POST['phone_edit']}' WHERE user_id = {$user_id}");
-		    header("Location: http://{$_SERVER['SERVER_ADDR']}:8083/");
+		    header("Location: http://{$_SERVER['SERVER_ADDR']}:8083");
             die();
 		}
 
@@ -83,6 +83,7 @@
         $email = $result[2];
         $phone = $result[3];
         $photo_path = $result[4];
+
     ?>
 
     <form action='edit.php' method='POST'>
@@ -103,13 +104,13 @@
 
     </form>
 
-
     <form action='edit.php' method='POST' enctype='multipart/form-data'>
+        
 
         <input type='hidden' name='user_id' size='15' value='<?php echo $user_id; ?>'>
-
+        
         <?php if (!is_null($photo_path)): ?>
-            Photo: <img src='<?php echo $photo_path; ?>' width='300' height='200' alt='img'>
+            Photo: <img src='<?php echo $photo_path . "?" . date('dmyhis'); ?>' width='300' height='200' alt='img'>
         <?php else: ?>
             Photo: absent
         <?php endif; ?>

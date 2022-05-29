@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - './app:/var/www/html'
+      - './docker/nginx/conf.d/:/etc/nginx/conf.d'
+      
+  php:
+    build: docker/php
+    volumes:
+      - './app:/var/www/html'
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=test1
+      - POSTGRES_DB=users
+    ports:
+      - 5432:5432
+    volumes:
+      - './docker/postgres/:/docker-entrypoint-initdb.d/'

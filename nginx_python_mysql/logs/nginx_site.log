@@ -9090,3 +9090,151 @@ spawned uWSGI worker 2 (pid: 1136, cores: 1)
 spawned uWSGI worker 3 (pid: 1137, cores: 1)
 spawned uWSGI worker 4 (pid: 1138, cores: 1)
 spawned uWSGI worker 5 (pid: 1139, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 22 13:12:47 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-41-generic #46~20.04.1-Ubuntu SMP Wed Apr 20 13:16:21 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42536
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f355cfa6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f355cfa6e0 pid: 878 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 878)
+spawned uWSGI worker 1 (pid: 1081, cores: 1)
+spawned uWSGI worker 2 (pid: 1082, cores: 1)
+spawned uWSGI worker 3 (pid: 1083, cores: 1)
+spawned uWSGI worker 4 (pid: 1084, cores: 1)
+spawned uWSGI worker 5 (pid: 1085, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu May 26 19:03:26 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-41-generic #46~20.04.1-Ubuntu SMP Wed Apr 20 13:16:21 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42536
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f5957876e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f5957876e0 pid: 857 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 857)
+spawned uWSGI worker 1 (pid: 1090, cores: 1)
+spawned uWSGI worker 2 (pid: 1091, cores: 1)
+spawned uWSGI worker 3 (pid: 1092, cores: 1)
+spawned uWSGI worker 4 (pid: 1093, cores: 1)
+spawned uWSGI worker 5 (pid: 1094, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 14:06:12 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-41-generic #46~20.04.1-Ubuntu SMP Wed Apr 20 13:16:21 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42536
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5562c7c006e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5562c7c006e0 pid: 891 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 891)
+spawned uWSGI worker 1 (pid: 1131, cores: 1)
+spawned uWSGI worker 2 (pid: 1132, cores: 1)
+spawned uWSGI worker 3 (pid: 1133, cores: 1)
+spawned uWSGI worker 4 (pid: 1134, cores: 1)
+spawned uWSGI worker 5 (pid: 1135, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 3 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket nginx_site.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Thu Jun  2 18:34:21 2022] ***
+compiled with version: 9.4.0 on 27 April 2022 10:39:47
+os: Linux-5.13.0-44-generic #49~20.04.1-Ubuntu SMP Wed May 18 18:44:28 UTC 2022
+nodename: sergei-VirtualBox
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /var/www/LAMP-setup-group-project/nginx_python_mysql
+detected binary path: /var/www/LAMP-setup-group-project/nginx_python_mysql/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 42536
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address nginx_site.sock fd 3
+Python version: 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5562cef7d6e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5562cef7d6e0 pid: 836 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 836)
+spawned uWSGI worker 1 (pid: 1121, cores: 1)
+spawned uWSGI worker 2 (pid: 1122, cores: 1)
+spawned uWSGI worker 3 (pid: 1123, cores: 1)
+spawned uWSGI worker 4 (pid: 1124, cores: 1)
+spawned uWSGI worker 5 (pid: 1125, cores: 1)

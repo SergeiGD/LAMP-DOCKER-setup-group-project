@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile_postgres
+    container_name: db
+    image: db
+    restart: on-failure
+    environment:
+      POSTGRES_USER: sergei
+      POSTGRES_PASSWORD: kingkits1
+      POSTGRES_DB: users
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile_php
+    image: app
+    container_name: app
+    restart: on-failure
+    volumes:
+      - ./:/var/www/LAMP-setup-group-project/tasks/task_5
+    depends_on:
+      - db
+
+  webserver:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile_nginx
+    image: nginx
+    container_name: nginx
+    restart: on-failure
+    ports:
+      - "8083:8083"
+      - "8081:8081"
+    volumes:
+      - ./:/var/www/LAMP-setup-group-project/tasks/task_5
+      - ./config_files/nginx/:/etc/nginx/conf.d/
+    depends_on:
+      - app
+

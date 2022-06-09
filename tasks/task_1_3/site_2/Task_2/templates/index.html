@@ -1,0 +1,32 @@
+<!-- template for del.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delete confirmation</title>
+</head>
+<body>
+    Вы точно хотите удалить:
+    <br>
+    <table cellpadding="5" border="1">
+		<tr>
+			<th>id</th>
+			<th>login</th>
+			<th>name</th>
+		</tr>
+    {% for row in user %}
+    <tr>
+        <form method='GET'>
+		    <td> <input type='hidden' name="id" value='{{ row[0] }}'> {{ row[0] }} </th>
+		    <td> <input type='text' name="login_edit" value='{{ row[1] }}' required></td>
+	    	<td> <input type='text' name="name_edit" value='{{ row[2] }}' required></td>
+            <td> <button type="submit" name="delete">delete</button> </td>
+	    </form>
+    </tr>
+    {% endfor %}
+</table>
+?
+<button> <a href=http://127.0.0.1:8082/> go back </a> </button>
+</body>
+</html>

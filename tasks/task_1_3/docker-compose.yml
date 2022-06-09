@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  #site_1:
+  #  build: ./site_1
+  #  container_name: site_1_Task_1_3
+  #  volumes:
+  #    - ./site_1:/Task_1_3
+  #  depends_on:
+  #    - mysql
+  #site_2:
+  #  build: ./site_2
+  #  container_name: site_2_Task_1_3
+  #  volumes:
+   #   - ./site_2:/Task_1_3
+   # depends_on:
+   #   - mysql
+  apache2:
+    build: ./apache
+    container_name: apache_Task_1_3
+    volumes:
+      - ./site_2:/var/www
+      - ./site_1:/var/www/Task_1
+    ports:
+      - 8082:8082
+      - 8083:8083
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: Rasmus1love
+        MYSQL_USER: egor
+        MYSQL_PASSWORD: Rasmus1love
+        MYSQL_DATABASE: testDB
+    volumes:
+        - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql

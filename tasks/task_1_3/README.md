@@ -5,11 +5,12 @@
 Перейдите в директорию, в которую в положили эту папку.
 
 Далее, введите команды:
-'''bash
+```bash
 docker-compose build
-'''bash
+```
 
 Потом 
-'''bash
+
+```bash
 docker-compose up
-'''bash
+```

@@ -33,7 +33,10 @@
 
             if(!is_null($old_photo))
             {
-                unlink($old_photo);
+                if (file_exists($old_photo)) 
+                {
+                    unlink($old_photo);
+                }
                 pg_query($dbconn, "UPDATE users SET photo = null WHERE user_id = {$user_id}");
             }
 

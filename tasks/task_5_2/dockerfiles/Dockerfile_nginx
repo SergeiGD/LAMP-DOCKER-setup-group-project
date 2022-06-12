@@ -1,7 +1,0 @@
-FROM nginx:alpine
-
-COPY ./config_files/nginx/nginx_task_users.conf /etc/nginx/conf.d/app.conf
-
-COPY ./config_files/nginx/nginx_task_edit.conf /etc/nginx/conf.d/app.conf
-
-COPY . /var/www/LAMP-setup-group-project/tasks/task_5

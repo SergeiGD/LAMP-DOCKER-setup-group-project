@@ -9,8 +9,8 @@ CREATE TABLE users(
 );
 
 INSERT INTO users(user_name, email, phone_num, photo) VALUES
-('michel', 'asdsf@gmail.com', '324523', NULL), ('anna', 'anna293122f@gmail.com', '435436', 'images/5.jpg'),
-('alex', 'qwerty@gmail.com', '880055355', 'images/2.jpg'), ('user789', 'xan@gmail.com', '2123', NULL),
+('michel', 'asdsf@gmail.com', '324523', NULL), ('anna', 'anna293122f@gmail.com', '435436', 'NULL'),
+('alex', 'qwerty@gmail.com', '880055355', 'NULL'), ('user789', 'xan@gmail.com', '2123', NULL),
 ('boris', 'zbfddg@gmail.com', '423525654', NULL), ('jaba', 'usersname@gmail.com', '32465434', NULL);
 
 GRANT ALL PRIVILEGES ON users TO sergei;

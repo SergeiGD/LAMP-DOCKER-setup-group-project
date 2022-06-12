@@ -8,6 +8,8 @@ services:
     container_name: db
     image: db
     restart: on-failure
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: sergei
       POSTGRES_PASSWORD: kingkits1
@@ -28,10 +30,7 @@ services:
       - db
 
   webserver:
-    build:
-      context: .
-      dockerfile: ./dockerfiles/Dockerfile_nginx
-    image: nginx
+    image: nginx:alpine
     container_name: nginx
     restart: on-failure
     ports:

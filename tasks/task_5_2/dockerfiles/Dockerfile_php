@@ -15,5 +15,3 @@ RUN addgroup -g 1000 -S www && \
 USER www
 
 COPY --chown=www:www . /var/www/LAMP-setup-group-project/tasks/task_5
-
-EXPOSE 9000

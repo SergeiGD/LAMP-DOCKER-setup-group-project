@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Сравнение</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Сравнение</h1> 
+<h3>Первый пользователь</h3>
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+		</tr>
+	
+   
+    <tr>
+        <form method='GET'>
+		
+		<td> <input type='text' name="id" value={{ user1.id }}></td>
+		{% if checkName == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="name" value={{ user1.name }}></td>
+		{% else %}
+		<td><input type='text' name="name" value={{ user1.name }}></td>
+		{% endif %}
+		{% if checkEmail == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="email" value={{ user1.email }}></td>
+		{% else %}
+		<td><input type='text' name="email" value={{ user1.email }}></td>
+		{% endif %}
+		{% if checkCity == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="city" value={{ user1.city }}></td>
+		{% else %}
+		<td><input type='text' name="city" value={{ user1.city }}></td>
+		{% endif %}
+		{% if checkAge == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="age" value={{ user1.age }}></td>
+		{% else %}
+		<td><input type='text' name="age" value={{ user1.age }}></td>
+		{% endif %}
+		{% if checkProfession == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="profession" value={{ user1.profession }}></td>
+		{% else %}
+		<td><input type='text' name="profession" value={{ user1.profession }}></td>
+		{% endif %}
+		{% if checkPhone == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="phone" value={{ user1.phone }}></td>
+		{% else %}
+		<td><input type='text' name="phone" value={{ user1.phone }}></td>
+		{% endif %}
+		
+		 
+		
+		
+	</form>
+    </tr>
+    
+</table>
+<h3>Второй пользователь</h3>
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+			
+		</tr>
+    
+    <tr>
+        <form method='GET'>
+        
+		<td><input type='text' name="id2" value={{ user2.id }}></td>
+		{% if checkName == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="name2" value={{ user2.name }}></td>
+		{% else %}
+		<td><input type='text' name="name2" value={{ user2.name }}></td>
+		{% endif %}
+		{% if checkEmail == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="email2" value={{ user2.email }}></td>
+		{% else %}
+		<td><input type='text' name="email2" value={{ user2.email }}></td>
+		{% endif %}
+		{% if checkCity == False %}
+		<td bgcolor="#FFCC66"><input type='text' name="city2" value={{ user2.city }}></td>
+		{% else %}
+		<td><input type='text' name="city2" value={{ user2.city }}></td>
+		{% endif %}
+		{% if checkAge == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="age2" value={{ user2.age }}></td>
+		{% else %}
+		<td><input type='text' name="age2" value={{ user2.age }}></td>
+		{% endif %}
+		{% if checkProfession == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="profession2" value={{ user2.profession }}></td>
+		{% else %}
+		<td><input type='text' name="profession2" value={{ user2.profession }}></td>
+		{% endif %}
+		{% if checkPhone == False %}
+		<td bgcolor="#FFCC66" ><input type='text' name="phone2" value={{ user2.phone }}></td>
+		{% else %}
+		<td><input type='text' name="phone2" value={{ user2.phone }}></td>
+		{% endif %}
+		
+		
+	</form>
+    </tr>
+    
+</table>  
+
+
+
+	
+</body>
+</html>

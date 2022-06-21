@@ -1,0 +1,28 @@
+[Tue May 10 14:13:12.150376 2022] [wsgi:error] [pid 3071] [client 127.0.0.1:55644] No WSGI daemon process called 'mysql_python_apache' has been configured: /var/www/apache_python_mysql/app.wsgi
+[Tue May 10 14:16:50.419557 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646] [2022-05-10 14:16:50,416] ERROR in app: Exception on / [GET]
+[Tue May 10 14:16:50.419767 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646] Traceback (most recent call last):
+[Tue May 10 14:16:50.419773 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2077, in wsgi_app
+[Tue May 10 14:16:50.419775 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     response = self.full_dispatch_request()
+[Tue May 10 14:16:50.419777 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1525, in full_dispatch_request
+[Tue May 10 14:16:50.419779 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     rv = self.handle_user_exception(e)
+[Tue May 10 14:16:50.419781 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1523, in full_dispatch_request
+[Tue May 10 14:16:50.419782 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     rv = self.dispatch_request()
+[Tue May 10 14:16:50.419784 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1509, in dispatch_request
+[Tue May 10 14:16:50.419786 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Tue May 10 14:16:50.419788 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/var/www/apache_python_mysql/index.py", line 41, in index
+[Tue May 10 14:16:50.419789 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     return render_template('index.html', users = result)
+[Tue May 10 14:16:50.419791 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 149, in render_template
+[Tue May 10 14:16:50.419793 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Tue May 10 14:16:50.419795 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1071, in get_or_select_template
+[Tue May 10 14:16:50.419796 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     return self.get_template(template_name_or_list, parent, globals)
+[Tue May 10 14:16:50.419798 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 1000, in get_template
+[Tue May 10 14:16:50.419800 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     return self._load_template(name, globals)
+[Tue May 10 14:16:50.419801 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 959, in _load_template
+[Tue May 10 14:16:50.419803 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     template = self.loader.load(self, name, self.make_globals(globals))
+[Tue May 10 14:16:50.419805 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/jinja2/loaders.py", line 126, in load
+[Tue May 10 14:16:50.419806 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     source, filename, uptodate = self.get_source(environment, name)
+[Tue May 10 14:16:50.419808 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 59, in get_source
+[Tue May 10 14:16:50.419810 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     return self._get_source_fast(environment, template)
+[Tue May 10 14:16:50.419811 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]   File "/usr/local/lib/python3.8/dist-packages/flask/templating.py", line 95, in _get_source_fast
+[Tue May 10 14:16:50.419819 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646]     raise TemplateNotFound(template)
+[Tue May 10 14:16:50.419821 2022] [wsgi:error] [pid 3194] [remote 127.0.0.1:55646] jinja2.exceptions.TemplateNotFound: index.html

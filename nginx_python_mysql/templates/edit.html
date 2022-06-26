@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python CRUD nginx + mysql</title>
+</head>
+<body>
+    {% block content %}
+        <form method='get'>
+
+                id : {{ user[0] }}
+                <br/>
+                <input type='hidden' name='id' size='15' value='{{ user[0] }}'>
+
+                Name : <input type='text' name='name_edit' size='15' value='{{ user[1] }}' required>
+
+                Email: <input type='text' name='email_edit' size='10' value='{{ user[2] }}' required>
+
+                Phone: <input type='text' name='phone_edit' value='{{ user[3] }}' size='10'>
+
+                <input type='submit' value='edit user' name='edit'>
+
+        </form>
+    {% endblock %}
+</body>
+</html>

@@ -10,7 +10,8 @@ config = {
     "DB_NAME" : getenv('DB_NAME'),
     "DB_USER" : getenv('DB_USER'),
     "PGSQL_DB_PASSWORD" : getenv('PGSQL_DB_PASSWORD'),
-    "SECRET_KEY" : getenv('SECRET_KEY')
+    "SECRET_KEY" : getenv('SECRET_KEY'),
+    "PGSQL_PORT" : getenv('PGSQL_PORT')
 }
 
 

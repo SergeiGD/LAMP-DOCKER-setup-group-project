@@ -1,0 +1,13 @@
+[Unit]
+Description=task_main
+After=network.target
+
+[Service]
+User=egor
+Group=www-data
+WorkingDirectory=/var/www/Task
+Environment="PATH=/var/www/Task/env/bin"
+ExecStart=/var/www/Task/env/bin/uwsgi --ini nginx_site.ini
+
+[Install]
+WantedBy=multi-user.target

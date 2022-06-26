@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Пользователи</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Пользователи</h1> 
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+			
+		</tr>
+
+	{% for user in users %}
+	<tr>
+	
+	<td> <input type='text' name="id" value={{ user.id }} size="1"> </th>
+	<td> <input type='text' name="name" value={{ user.name }}></td>
+	<td> <input type='text' name="email" value={{ user.email }}></td>
+	<td> <input type='text' name="city" value={{ user.city }}></td>
+	<td> <input type='text' name="age" value={{ user.age }}></td>
+	<td> <input type='text' name="profession" value={{ user.profession }}></td>
+	<td> <input type='text' name="phone" value={{ user.phone }}></td>
+	    
+	</form>    
+	</tr>
+	{% endfor %}
+</table>
+	
+	<form method='GET' novalidate>
+	<input type='hidden' name='rowQuantity' value='{{rowQuantity}}'>
+	<p></p>
+	{% if check_prev == True %}
+		<button type="submit" name="back">Назад</button>
+	{% else %}
+		<button disabled type="submit" name="back">Назад</button>
+	{% endif %}
+	{% if check_next == True %}
+		<button type="submit" name="forward">Вперед</button>
+	{% else %}
+		<button disabled type="submit" name="forward">Вперед</button>
+	{% endif %}
+	<h3>Сравнение пользователей</h3>
+	Id 1-го пользователя: <input type="text" name="id1" value='{{id1Text}}' size="5" required></p>
+	Id 2-го пользователя: <input type="text" name="id2" value='{{id2Text}}' size="5" required></p>
+	<button type="submit" name="comparison">Сравнить</button>
+	</form>
+</body>
+</html>

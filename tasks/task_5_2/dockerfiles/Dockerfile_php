@@ -1,0 +1,17 @@
+FROM php:7.4-fpm-alpine
+
+WORKDIR /var/www/LAMP-setup-group-project/tasks/task_5
+
+RUN apk update && apk add \
+    build-base \
+    libpq-dev \
+    vim
+
+RUN docker-php-ext-install pdo pdo_pgsql pgsql
+
+RUN addgroup -g 1000 -S www && \
+    adduser -u 1000 -S www -G www
+
+USER www
+
+COPY --chown=www:www . /var/www/LAMP-setup-group-project/tasks/task_5

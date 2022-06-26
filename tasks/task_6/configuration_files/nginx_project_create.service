@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to nginx site
+After=network.target
+
+[Service]
+User=ksenia
+Group=www-data
+WorkingDirectory=/var/www/lamp/project/create
+Environment="PATH=/var/www/lamp/project/create/env/bin"
+ExecStart=/var/www/lamp/project/create/env/bin/uwsgi --ini nginx_project_create.ini
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Сравнение</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Сравнение</h1> 
+<h3>Первый пользователь</h3>
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+		</tr>
+	
+    {% for row in user1 %}
+    <tr>
+        <form method='GET'>
+		
+		<td><input type='hidden' name="id" value='{{ row[0] }}'> {{ row[0] }}</th>
+		{% if checkName == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="name" value='{{ row[1] }}'> {{ row[1] }}</th>
+		{% else %}
+		<td><input type='hidden' name="name" value='{{ row[1] }}'> {{ row[1] }}</th>
+		{% endif %}
+		{% if checkEmail == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="email" value='{{ row[2] }}'> {{ row[2] }}</th>
+		{% else %}
+		<td><input type='hidden' name="email" value='{{ row[2] }}'> {{ row[2] }}</th>
+		{% endif %}
+		{% if checkCity == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="city" value='{{ row[3] }}'> {{ row[3] }}</th>
+		{% else %}
+		<td><input type='hidden' name="city" value='{{ row[3] }}'> {{ row[] }}</th>
+		{% endif %}
+		{% if checkAge == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="age" value='{{ row[4] }}'> {{ row[4] }}</th>
+		{% else %}
+		<td><input type='hidden' name="age" value='{{ row[4] }}'> {{ row[4] }}</th>
+		{% endif %}
+		{% if checkProfession == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="profession" value='{{ row[5] }}'> {{ row[5] }}</th>
+		{% else %}
+		<td><input type='hidden' name="profession" value='{{ row[5] }}'> {{ row[5] }}</th>
+		{% endif %}
+		{% if checkPhone == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="phone" value='{{ row[6] }}'> {{ row[6] }}</th>
+		{% else %}
+		<td><input type='hidden' name="phone" value='{{ row[6] }}'> {{ row[6] }}</th>
+		{% endif %}
+		
+		 
+		
+		
+	</form>
+    </tr>
+    {% endfor %}
+</table>
+<h3>Второй пользователь</h3>
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+			
+		</tr>
+    {% for row1 in user2 %}
+    <tr>
+        <form method='GET'>
+        
+		<td><input type='hidden' name="id2" value='{{ row1[0] }}'> {{ row1[0] }}</th>
+		{% if checkName == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="name2" value='{{ row1[1] }}'> {{ row1[1] }}</th>
+		{% else %}
+		<td><input type='hidden' name="name2" value='{{ row1[1] }}'> {{ row1[1] }}</th>
+		{% endif %}
+		{% if checkEmail == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="email2" value='{{ row1[2] }}'> {{ row1[2] }}</th>
+		{% else %}
+		<td><input type='hidden' name="email2" value='{{ row1[2] }}'> {{ row1[2] }}</th>
+		{% endif %}
+		{% if checkCity == False %}
+		<td bgcolor="#FFCC66"><input type='hidden' name="city2" value='{{ row1[3] }}'> {{ row1[3] }}</th>
+		{% else %}
+		<td><input type='hidden' name="city2" value='{{ row1[3] }}'> {{ row1[3] }}</th>
+		{% endif %}
+		{% if checkAge == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="age2" value='{{ row1[4] }}'> {{ row1[4] }}</th>
+		{% else %}
+		<td><input type='hidden' name="age2" value='{{ row1[4] }}'> {{ row1[4] }}</th>
+		{% endif %}
+		{% if checkProfession == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="profession2" value='{{ row1[5] }}'> {{ row1[5] }}</th>
+		{% else %}
+		<td><input type='hidden' name="profession2" value='{{ row1[5] }}'> {{ row1[5] }}</th>
+		{% endif %}
+		{% if checkPhone == False %}
+		<td bgcolor="#FFCC66" ><input type='hidden' name="phone2" value='{{ row1[6] }}'> {{ row1[6] }}</th>
+		{% else %}
+		<td><input type='hidden' name="phone2" value='{{ row1[6] }}'> {{ row1[6] }}</th>
+		{% endif %}
+		
+		
+	</form>
+    </tr>
+    {% endfor %}
+</table>  
+ 
+
+	
+</body>
+</html>

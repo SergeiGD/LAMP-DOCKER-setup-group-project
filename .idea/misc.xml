@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/wsgi.py" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="185" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/index.py" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="321" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/conf.py" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/nginx_site.ini" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="192" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/configuration_files/nginx_site" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="292" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/configuration_files/nginx_site.service" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/requirements.txt" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/.gitignore" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/.env" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="401" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/nginx_python_mysql/README.MD" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+[Unit]
+Description=task_delete
+After=network.target
+
+[Service]
+User=egor
+Group=www-data
+WorkingDirectory=/var/www/Task_delete
+Environment="PATH=/var/www/Task_delete/env/bin"
+ExecStart=/var/www/Task_delete/env/bin/uwsgi --ini nginx_site.ini
+
+[Install]
+WantedBy=multi-user.target

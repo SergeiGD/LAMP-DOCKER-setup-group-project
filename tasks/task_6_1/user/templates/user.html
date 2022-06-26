@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Информация о пользователе</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<table cellspacing="2" border="1" cellpadding="5">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+			<th>city</th>
+			<th>age</th>
+			<th>profession</th>
+			<th>phone</th>
+			
+		</tr>
+	{% for row in users %}
+	<tr>
+        <form method='GET'>
+
+		<td> <input type='hidden' name="id" value='{{ row[0] }}'> {{ row[0] }} </th>
+		<td> <input type='text' name="name_edit" value='{{ row[1] }}' required></td>
+		<td> <input type='text' name="email_edit" value='{{ row[2] }}' required></td>
+		<td> <input type='text' name="city_edit" value='{{ row[3] }}' required></td>
+		<td> <input type='text' name="age_edit" value='{{ row[4] }}' required></td>
+		<td> <input type='text' name="profession_edit" value='{{ row[5] }}' required></td>
+		<td> <input type='text' name="phone_edit" value='{{ row[6] }}' required></td>
+		<p><td><button type="submit" name="delete">Удалить</button></td>
+		<td><button type="submit" name="edit">Изменить</button></td></p>
+		
+		
+		
+	</form>
+    </tr>
+    {% endfor %}	
+</table>
+	
+</body>
+</html>

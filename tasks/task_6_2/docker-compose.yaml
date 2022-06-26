@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  web:
+    build: ./services/web
+    command: gunicorn --bind 0.0.0.0:5000 manage:app
+    expose:
+      - 5000
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+  web_1:
+    build: ./services/web_1
+    command: gunicorn --bind 0.0.0.0:5001 manage:app
+    expose:
+      - 5001
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.db
+  nginx:
+    build: ./services/nginx
+    ports:
+      - 1337:80
+      - 1338:81
+    depends_on:
+      - web
+      - web_1
+volumes:
+  postgres_data:
